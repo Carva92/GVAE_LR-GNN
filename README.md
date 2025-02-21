@@ -7,9 +7,9 @@ This repository contains the implementation of a Graph Variational Autoencoder (
 This project implements a Graph Variational Autoencoder (GVAE) to reconstruct an adjacency matrix and node features from patient data, followed by a Graph Neural Network (GNN) trained with a Contextual Bandit (CB) algorithm for adaptive learning. The model iteratively optimizes the graph structure to enhance MCC classification.
 
 # Key components:
-- **GVAE for Graph Representation Learning**
-- **GNN for MCC Classification**
-- **Contextual Bandit Algorithm for Adaptive Learning**
+- **GVAE for Graph Representation Learning.**
+- **GNN for MCC Classification.**
+- **Contextual Bandit Algorithm for Adaptive Learning.**
 
 
 # Usage Instructions
@@ -39,5 +39,17 @@ If using a different dataset, update the file path in:
 
 ```python
 data = pd.read_csv('your_dataset.csv')
+```
 
+## **Step 2: Train the Model**
 
+Run the main script to train the Graph Variational Autoencoder (GVAE) and Graph Neural Network (GNN):
+
+```python
+python train_model.py
+```
+### This process includes:
+
+- **Training the GVAE to reconstruct adjacency matrices.**
+- **Running the Contextual Bandit algorithm for adaptive learning.**
+- **Evaluating the model on Accuracy, AUC-ROC, Precision, Recall, and F1-score.**
