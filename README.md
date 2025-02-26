@@ -35,7 +35,7 @@ pip install tensorflow keras numpy pandas networkx spektral matplotlib scipy sci
 ## **Step 2: Prepare the Data**
 Ensure you have the dataset ready. The default script expects a CSV file named **`synthetic_dataset_general_mcc.csv`** in the project directory.
 
-If using a different dataset, update the file path in:
+If using a different dataset, update the file path inside the model_train.py file in:
 
 ```python
 data = pd.read_csv('your_dataset.csv')
